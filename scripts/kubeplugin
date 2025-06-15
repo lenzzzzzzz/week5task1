@@ -2,8 +2,8 @@
 
 # Define command-line arguments
 
-NAMESPACE=$1
-RESOURCE_TYPE=$2
+NAMESPACE=kube-system
+RESOURCE_TYPE=pod
 
 if [ -z "$NAMESPACE" ] || [ -z "$RESOURCE_TYPE" ]; then
   echo "Usage: $0 <namespace> <resource_type>"
